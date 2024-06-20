@@ -436,10 +436,11 @@ h6 {
 
 .orderForm {
   position: fixed;
-  top: 50%;
   left: 50%;
+  top: 100px;
+  overflow-y: scroll;
   width: 300px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   background: #000000b4;
   padding: 20px;
   box-shadow: 0 0 10px rgb(251, 34, 34);
@@ -748,4 +749,5 @@ div.comment {
   
 .orderForm {
   width: 300px;
+  height: calc(100vh - 100px);
 } 
