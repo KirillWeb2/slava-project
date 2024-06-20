@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  background-image: url(https://sun9-50.userapi.com/impf/lnJ8bbMwpRculu-11aiG8m6Xc2h4uM0wJ6R9fA/IRJmAJHFZYs.jpg?size=1920x768&quality=95&crop=0,48,983,392&sign=8e4ce6638a3f8eb1b01f4dda81d7e728&type=cover_group);
+  
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-behavior: auto;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(34, 161, 207);
+}
+
+.navbar-nav .nav-link.active {
+  color: darkgray;
+}
+
+.navbar-brand img {
+  width: 70px
+}
+
+.navbar-brand img {
+  width: 70px
+}
+
+.fixed-top {
+  filter: drop-shadow(10px 7px 10px rgb(116, 123, 221));
+  width: 300px;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.card-body {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 35px;
+  margin-bottom: 40px;
+  height: 200px;
+}
+
+.col-lg-4,
+.col-md-6 {
+  margin-bottom: 20px;
+  /* Добавляем отступ снизу между карточками товара */
+}
+
+.card:hover {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: darkgray;
+  /* Пример прозрачного фона с использованием RGBA */
+  z-index: -1;
+}
+
+.highlighted-area {
+  position: fixed;
+  /* Фиксированное позиционирование */
+  bottom: 0;
+  /* Прижимаем к нижней части страницы */
+  left: 0;
+  /* Выравнивание по левому краю */
+  width: 100%;
+  /* Ширина 100% */
+  height: 175px;
+  /* Высота 100px */
+  background-color: rgba(35, 34, 34, 0.8);
+  /* Полупрозрачный цвет фона */
+  color: white;
+  /* Выравнивание текста по центру */
+  z-index: 1;
+  /* Устанавливаем панель поверх других элементов */
+  display: flex;
+  /* Используем flexbox */
+  align-items: center;
+  justify-content: center;
+  /* Выравнивание текста по центру */
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+  text-align: center;
+}
+
+.text-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Полупрозрачный цвет фона */
+  width: 90%;
+  /* Увеличиваем ширину контейнера */
+  max-width: 900px;
+  max-height: 500px;
+  border: 1px solid;
+  /* Максимальная ширина контейнера */
+  text-align: center;
+  font-size: 24px;
+  /* Увеличиваем размер текста */
+  z-index: 1;
+  /* Устанавливаем блок выше других элементов */
+  border-radius: 10px;
+  /* Закругляем углы */
+  font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.text-center a {
+  color: white;
+  /* Изменяем цвет ссылки */
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  /* Убираем подчеркивание */
+  filter: drop-shadow(10px 7px 10px rgba(40, 189, 219, 0.798));
+}
+
+.card {
+  box-shadow: 10px 7px 10px rgba(36, 204, 255, 0.771);
+}
+
+.btn.btn-primary {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn.btn-primary:focus {
+  background-color: rgb(219, 151, 151);
+  border: 1px solid black;
+
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(96, 96, 96);
+  color: white
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  margin: 0;
+  background-color: #00000063;
+}
+
+.pb-4 {
+  padding-top: 20px;
+  box-shadow: 10px 7px 10px rgba(36, 204, 255, 0.0);
+  background-color: rgba(0, 0, 0, 0.419);
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1 {
+  color: rgb(165, 141, 141);
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3px;
+  width: 500px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(179, 176, 176);
+
+}
+
+form textarea {
+  height: 500px;
+  background-color: rgb(179, 176, 176);
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#reviewContainer {
+  margin-top: 20px;
+  width: 650px;
+}
+
+.comment {
+  background-color: #f9f9f900;
+  /* Цвет фона */
+  padding: 20px;
+  border-radius: 10px;
+  /* Округление углов */
+
+  margin-bottom: 20px;
+  /* Отступ между отзывами */
+  text-align: center;
+  /* Выравнивание текста по правому краю */
+}
+
+#reviewContainer {
+  overflow-y: scroll;
+  white-space: nowrap;
+  position: absolute;
+  right: 175px;
+  /* Смещение контейнера вправо */
+  color: white;
+  height: 725px;
+  width: 700px;
+  padding: 20px;
+  margin-top: 73px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  /* Выравнивание текста по правому краю внутри контейнера */
+  z-index: 1;
+}
+
+h1 {
+  color: #545454;
+  padding-right: 14px;
+  filter: drop-shadow(10px 7px 10px rgb(64, 211, 179));
+}
+
+.contfoot {
+  position: fixed;
+  /* Фиксированное позиционирование */
+  bottom: 0;
+  /* Прижимаем к нижней части страницы */
+  left: 0;
+  /* Выравнивание по левому краю */
+  width: 100%;
+  /* Ширина 100% */
+  height: 40px;
+  /* Высота 100px */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Полупрозрачный цвет фона */
+  color: white;
+  /* Выравнивание текста по центру */
+  z-index: 1;
+  /* Устанавливаем панель поверх других элементов */
+  display: flex;
+}
+
+#reviewForm {
+  position: absolute;
+  right: 1175px;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+#reviewForm {
+  margin-top: 50px;
+}
+
+
+.comment {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Прозрачный фон */
+  border: none;
+  /* Убираем обводку */
+  padding: 10px;
+  /* Отступ внутри комментария */
+  text-align: center;
+  /* Выравнивание текста по центру */
+}
+
+.comment p {
+  color: #fefefe;
+  /* Цвет текста комментария */
+}
+
+.comment button {
+  margin: 0 auto;
+  /* Выравнивание кнопки по центру */
+  transition: background-color 0.3s ease;
+  /* Анимация при изменении цвета фона */
+}
+
+.comment button:hover {
+  background-color: #ffcc00;
+  /* Новый цвет фона при наведении */
+}
+
+.comment button {
+  margin: 0 auto;
+  /* Выравнивание кнопки по центру */
+  background-color: rgba(255, 204, 0, 0.);
+  /* Прозрачный цвет фона */
+  border: none;
+  /* Убираем обводку */
+  transition: background-color 0.3s ease, box-shadow 0.5s ease;
+  /* Анимация при изменении цвета фона и тени */
+}
+
+.comment button:hover {
+  background-color: #ffcc00;
+  /* Новый цвет фона при наведении */
+  box-shadow: 0 0 10px #ffcc00;
+  /* Анимация тени при наведении */
+}
+
+
+#reviewForm button {
+  background-color: rgb(15, 234, 253);
+  color: black;
+
+}
+
+h3 {
+  margin-left: 36%;
+  font-size: 35px;
+  font-family: Raleway, sans-serif;
+  font-weight: 350;
+}
+
+.contact-info {
+  margin-top: 430px;
+  margin-right: 425px;
+  position: absolute;
+  top: 146px;
+  right: 67px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  height: 350px;
+  width: 839px;
+  font-family: Raleway, sans-serif;
+}
+
+h6 {
+  font-size: 70px;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+}
+
+.contact-info p {
+  font-size: 25px;
+  font-family: Raleway, sans-serif;
+}
+
+.contact-info a {
+  color: rgb(230, 33, 66);
+  font-family: Raleway, sans-serif;
+}
+
+/* Стили для мобильных устройств */
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+  .contact-info {
+    /* Ваши стили для мобильных устройств здесь */
+    font-size: 14px;
+  }
+}
+
+/* Стили для планшетов и ноутбуков */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-info {
+    /* Ваши стили для планшетов и ноутбуков здесь */
+    font-size: 16px;
+  }
+}
+
+#map {
+  width: 100%;
+  /* Карта занимает 100% ширины родительского контейнера */
+  height: 50%;
+  /* Высота карты по умолчанию для мобильных устройств */
+  margin-left: 20px;
+  
+  /* Отступ слева, если нужно */
+}
+
+/* Изменение размеров для планшетов и десктопов */
+
+
+
+.orderForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  background: #000000b4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(251, 34, 34);
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  /* По умолчанию скрываем модальное окно */
+  position: fixed;
+  /* Фиксированное положение на экране */
+  z-index: 1;
+  /* На верхнем слое */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* По всей ширине экрана */
+  height: 100%;
+  /* По всей высоте экрана */
+  overflow: auto;
+  /* Добавляем прокрутку, если содержимое слишком большое */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Черный полупрозрачный фон */
+}
+
+.modal-content {
+  background: linear-gradient(to right, #707070, #d8d8d8);
+  /* Градиентный фон */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Центрируем модальное окно на экране */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 250px;
+  /* Ширина модального окна */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для сообщения о принятом заказе */
+#modalContent {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.product-image {
+  
+  /* Высота изображения */
+  object-fit: cover; /* Заполнение изображения в области */
+}
+
+#map {
+  margin-top: 300px;
+  width: 830px;
+  height: 410px;
+  margin-left: 350px;
+  position: center;
+}
+
+.contact-info{
+  margin-top: 700px;
+  border-radius: 10px;
+  margin-left: 350px;
+}
+
+h3 {
+  margin-top: 100px;
+  margin-left: 675px;
+}
+
+#reviewContainer {
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .container-fluib img {
+    width: 150px;
+  }
+}
+    
+@media (max-width: 768px) {
+  .highlighted-area  {
+    width: 800px;
+    font-size: 20px;
+    height: 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlighted-area p  {
+    margin-right: 230px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item .repair  {
+    margin-left: -100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #reviewContainer  {
+    width: 300px;
+    height: 610px;
+    margin-right: -125PX;
+    margin-top: 118px;
+    word-wrap: break-word; /* Для поддержки всех браузеров */
+    overflow-wrap: break-word; 
+  }
+}
+
+@media (max-width: 1024px) {
+  form#reviewForm  {
+    width: 300px;
+    height: 610px;
+    margin-left: 1230px;
+    margin-top: 80px;
+    position: relative;
+  }
+}
+
+@media (max-width: 1024px) {
+  form textarea {
+    height: 375px; 
+  }
+}
+
+div.comment {
+  word-wrap: break-word; /* Для поддержки всех браузеров */
+  overflow-wrap: break-word; 
+}
+
+.comment {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  #reviewContainer  {
+    width: 300px;
+    height: 610px;
+    margin-right: -125PX;
+    margin-top: 750px;
+    
+    word-wrap: break-word; /* Для поддержки всех браузеров */
+    overflow-wrap: break-word; 
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(https://sun9-50.userapi.com/impf/lnJ8bbMwpRculu-11aiG8m6Xc2h4uM0wJ6R9fA/IRJmAJHFZYs.jpg?size=1920x768&quality=95&crop=0,48,983,392&sign=8e4ce6638a3f8eb1b01f4dda81d7e728&type=cover_group);
+    background-size: 320px 768px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #map {
+    width: 600px;
+    height: 300px;
+    margin-left: 220px;
+    margin-top: 20px;
+    
+  }
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 30px;
+    margin-left: 290px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-info  {
+    margin-right: -70px;
+    word-wrap: break-word; /* Для поддержки всех браузеров */
+    overflow-wrap: break-word; 
+    width: 610px;
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mappool {
+    position: absolute;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
+.mappool {
+  position: absolute;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+@media (max-width: 431px) {
+  .mappool {
+    position: absolute;
+    
+  }
+}
+
+#map,
+.contact-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 431px) {
+  #map {
+    width: 300px;
+    height: 300px;
+    margin-left: -70px;
+    margin-top: 250px;
+  }
+
+  .contact-info {
+    width: 300px;
+    height: 650px;
+    margin-left: -70px;
+    margin-top: 750px;
+  }
+}
+
+
+
+@media (max-width: 431px) {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+}   
+
+@media (max-width: 431px) {
+  .text h3 {
+    opacity: 0;
+  }
+}  
+  
+.orderForm {
+  width: 300px;
+} 

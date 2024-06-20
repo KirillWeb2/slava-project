@@ -1,0 +1,27 @@
+<script>
+// Добавляем обработчик событий к родительскому элементу карточек
+document.addEventListener('click', function(event) {
+    // Проверяем, было ли нажатие на кнопку "Заказать" в карточке
+    if (event.target.classList.contains('btn-primary')) {
+        event.preventDefault(); // Предотвращаем стандартное действие ссылки
+        // Показываем форму или модальное окно, связанное с нажатой карточкой
+        // Вы можете использовать event.target или event.currentTarget, чтобы обратиться к нажатой кнопке
+        orderForm.style.display = 'block'; // Показываем форму заказа
+    }
+});
+
+orderForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвращаем стандартную отправку формы
+    // Показываем сообщение о подтверждении в модальном окне
+    modalContent.innerText = "Заказ принят";
+    modal.style.display = 'block';
+    
+    // Скрываем форму после показа сообщения о подтверждении
+    orderForm.style.display = 'none';
+});
+
+// Закрываем модальное окно при клике на кнопку "Закрыть"
+document.getElementById('closeModal').addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+</script>

@@ -1,0 +1,7 @@
+{
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+    "codeium.enableConfig": {
+        
+        "*": true
+    }
+}
